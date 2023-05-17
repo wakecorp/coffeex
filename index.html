@@ -3,8 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>CoffeeX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+  </script>
+  <script type="text/javascript">
+  $(function(){
+    $('.logo_btn_box').hide()
+    $('.logo_btn_boxa').mouseover(function(){
+      $(this).css({'filter': 'blur(5px)',
+                     '-webkit-filter' : 'blur(5px)',
+                     '-moz-filter'    : 'blur(5px)',
+                     '-o-filter'      : 'blur(5px)',
+                     '-ms-filter'     : 'blur(5px)'});
+    });
+    $('.logo_btn_boxa').mouseout(function(){
+      $(this).css({'filter': 'blur(5px)',
+                     '-webkit-filter' : 'blur(0px)',
+                     '-moz-filter'    : 'blur(0px)',
+                     '-o-filter'      : 'blur(0px)',
+                     '-ms-filter'     : 'blur(0px)'});
+  });
+  $('.always_btn').click(function(){
+    $('.logo_btn_box').toggle()
+  });
+
+  $('.btn02').click(function(){
+    $('.s5t').css({'animation': 'active infinite',
+                    'animation-duration': '5s',
+                    'filter': 'blur(6px)',
+                     '-webkit-filter' : 'blur(6px)',
+                     '-moz-filter'    : 'blur(6px)',
+                     '-o-filter'      : 'blur(6px)',
+                     '-ms-filter'     : 'blur(6px)'});
+  });
+  });
+  </script>
   </head>
   <body>
-CoffeeX    
+    <div class="main">
+      <section class="s1">
+        <!--video autoplay="" muted="" loop="" playsinline="" webkit-playsinline="" style="width: 60%;margin-bottom:1em;margin-left:50%;transform:translate(-50%,0);"><source src="p1.mp4" type="video/mp4" alt=""></video-->
+        <p>Inspiration</p>
+        <h1 class="s1t"><span class="red">Forbidden Eden</span>은 '아담과 이브'들의 삶을 자세히 들여다보고, 이들의 이상이 실현될 수 있는 방법들을 제시해왔습니다.
+        갈망했던 '선악과'를 따먹는 의지실현을 통해 만나게 된 새로운 '에덴'은 이상을 쫒은 이들의 이상이 발현된 '가장 이상적인 낙원' 이었을 것이라고 믿습니다.
+        사회적 기준으로 만들어진 '에덴'을 탈피해 스스로가 추구하는 이상을 맞이할 수 있도록 우리는 돕고, 제안합니다.
+        </h1>
+      </section>
+
+      <div id="web_only">비좁은 여기 말구 <br>[PC Web]으로 확인해주세요.</div>
+    </div>
   </body>
 </html>
