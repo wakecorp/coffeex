@@ -26,34 +26,22 @@
   </script>
   <script type="text/javascript">
   $(function(){
-    $('.logo_btn_box').hide()
-    $('.logo_btn_boxa').mouseover(function(){
-      $(this).css({'filter': 'blur(5px)',
-                     '-webkit-filter' : 'blur(5px)',
-                     '-moz-filter'    : 'blur(5px)',
-                     '-o-filter'      : 'blur(5px)',
-                     '-ms-filter'     : 'blur(5px)'});
+    $('.t_bt01').click(function(){
+      $('.sl01').css('left','10%');
+      $('.sl02').css('left','-10%');
     });
-    $('.logo_btn_boxa').mouseout(function(){
-      $(this).css({'filter': 'blur(5px)',
-                     '-webkit-filter' : 'blur(0px)',
-                     '-moz-filter'    : 'blur(0px)',
-                     '-o-filter'      : 'blur(0px)',
-                     '-ms-filter'     : 'blur(0px)'});
-  });
-  $('.always_btn').click(function(){
-    $('.logo_btn_box').toggle()
-  });
-
-  $('.btn02').click(function(){
-    $('.s5t').css({'animation': 'active infinite',
-                    'animation-duration': '5s',
-                    'filter': 'blur(6px)',
-                     '-webkit-filter' : 'blur(6px)',
-                     '-moz-filter'    : 'blur(6px)',
-                     '-o-filter'      : 'blur(6px)',
-                     '-ms-filter'     : 'blur(6px)'});
-  });
+    $('.t_bt02').click(function(){
+      $('.sl02').css('left','10%')
+      $('.sl01').css('left','-10%');
+    });
+    $('.bt02').click(function(){
+      $('.img01').hide(),
+      $('.img02').show();
+    });
+    $('.bt01').click(function(){
+      $('.img02').hide(),
+      $('.img01').show();
+    });
   });
   </script>
   </head>
@@ -61,9 +49,32 @@
     <div class="main">
       <section class="s1">
         <!--video autoplay="" muted="" loop="" playsinline="" webkit-playsinline="" style="width: 60%;margin-bottom:1em;margin-left:50%;transform:translate(-50%,0);"><source src="p1.mp4" type="video/mp4" alt=""></video-->
-        <p>Inspiration</p>
+        <p class="s_title">Inspiration</p>
         <h1 class="s1t"><span class="red">coffeX is coffeless Brand.
         </h1>
+      </section>
+      <section>
+        <div class="s2">
+          <div class="left">
+            <ul class="s_title">
+              <li class="t_bt01">역사적인</li>
+              <li class="t_bt02">미래적인</li>
+            </ul>
+            <ul class="second_list sl01">
+              <li class="bt01">history01</li>
+              <li class="bt02">history02</li>
+            </ul>
+            <ul class="second_list sl02">
+              <li class="bt01">01</li>
+              <li class="bt02">02</li>
+            </ul>
+          </div>
+          <div class="right">
+            <img src="img/01.png" alt="" class="img01">
+            <img src="img/02.png" alt="" class="img02">
+          </div>
+
+        </div>
       </section>
 
       <div id="web_only">비좁은 여기 말구 <br>[PC Web]으로 확인해주세요.</div>
