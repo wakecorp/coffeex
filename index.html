@@ -26,21 +26,38 @@
   </script>
   <script type="text/javascript">
   $(function(){
-    $('.t_bt01').click(function(){
-      $('.sl01').css('left','10%');
-      $('.sl02').css('left','-10%');
+
+      $('.second_list').hide();
+      $('.right_img').hide();
+
+    $('.title01').click(function(){
+      $('.second_list').hide();
+      $('.sl01').show();
     });
-    $('.t_bt02').click(function(){
-      $('.sl02').css('left','10%')
-      $('.sl01').css('left','-10%');
-    });
-    $('.bt02').click(function(){
-      $('.img01').hide(),
-      $('.img02').show();
+    $('.title02').click(function(){
+      $('.second_list').hide();
+      $('.sl02').show();
     });
     $('.bt01').click(function(){
-      $('.img02').hide(),
+      $('.right_img').hide(),
       $('.img01').show();
+    });
+    $('.bt02').click(function(){
+      $('.right_img').hide(),
+      $('.img02').show();
+    });
+    $('.fbt01').click(function(){
+      $('.right_img').hide(),
+      $('.fimg01').show(),
+      $('.fimg01-1').show();
+    });
+    $('.fbt02').click(function(){
+      $('.right_img').hide(),
+      $('.fimg02').show();
+    });
+    $('.fbt03').click(function(){
+      $('.right_img').hide(),
+      $('.fimg03').show();
     });
   });
   </script>
@@ -49,29 +66,37 @@
     <div class="main">
       <section class="s1">
         <!--video autoplay="" muted="" loop="" playsinline="" webkit-playsinline="" style="width: 60%;margin-bottom:1em;margin-left:50%;transform:translate(-50%,0);"><source src="p1.mp4" type="video/mp4" alt=""></video-->
-        <p class="s_title">Inspiration</p>
-        <h1 class="s1t"><span class="red">coffeX is coffeless Brand.
+        <p class="s_title">Overview</p>
+        <h1 class="s1t">coffeX is beanless coffee Brand.<br>
+          Rising temperatures are pushing farmers uphill in search of more suitable climates, ultimately destroying some of our remaining virgin rainforests.Additionally, the demand for coffee is increasing year over year, with more than 2 billion cups of coffee consumed everyday globally. The change for conventional coffee to sustain will soon impact the consumer through price and scarcity.
         </h1>
       </section>
       <section>
         <div class="s2">
           <div class="left">
             <ul class="s_title">
-              <li class="t_bt01">Past-Present</li>
-              <li class="t_bt02">Future</li>
+              <li class="title01">Past-Present</li>
+              <li class="title02">Future</li>
             </ul>
             <ul class="second_list sl01">
               <li class="bt01">P01</li>
               <li class="bt02">P02</li>
             </ul>
             <ul class="second_list sl02">
-              <li class="bt01">F01</li>
-              <li class="bt02">F02</li>
+              <li class="fbt01">F01</li>
+              <li class="fbt02">F02</li>
+              <li class="fbt03">F03</li>
             </ul>
+            <div class="left_additional">
+              <img src="img/f01-1.png" alt="" class="fimg01-1 right_img">
+            </div>
           </div>
           <div class="right">
-            <img src="img/01.png" alt="" class="img01">
-            <img src="img/02.png" alt="" class="img02">
+            <img src="img/01.png" alt="" class="img01 right_img">
+            <img src="img/02.png" alt="" class="img02 right_img">
+            <img src="img/f01.png" alt="" class="fimg01 right_img">
+            <img src="img/f02.png" alt="" class="fimg02 right_img">
+            <video class="right_img fimg03"autoplay="" muted="" loop="" playsinline="" webkit-playsinline="" style="width: 100%;margin-bottom:1em;margin-left:50%;transform:translate(-50%,0);"><source src="img/draft01.mp4" type="video/mp4" alt=""></video>
           </div>
 
         </div>
