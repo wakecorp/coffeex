@@ -15,8 +15,9 @@ section{width:100%; height: 1200px; margin: 0 auto;background-color: #fff;}
 .red{color:#f00;font-family: 'Kanit', sans-serif;}
 .left{width:50%;}
 .left_additional{
-  position: absolute;bottom:0px;
+  position: absolute;bottom:0px; width:50%; height: 50%;overflow: hidden;
 }
+.left_additional img{width:50% !important;}
 .right{width:50%;}
 .right img{width:100%;}
 
@@ -24,7 +25,7 @@ section{width:100%; height: 1200px; margin: 0 auto;background-color: #fff;}
 .s1t{color: #3e3e3e;}
 
 .s2{width:100%;display: flex;}
-.second_list{position:absolute;top:17%;left:5%;color:#3e3e3e;font-size: 1rem;}
+.second_list{position:absolute;top:20%;left:5%;color:#3e3e3e;font-size: 1rem;}
 
 
 
