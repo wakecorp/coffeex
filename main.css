@@ -10,14 +10,14 @@ section{width:100%; height: 1200px; margin: 0 auto;background-color: #fff;}
 .left{width:50%;}
 .right{width:50%;}
 .right img{width:100%;}
-.s1{background-color: #FCF4D9;}
-.s3{width: 100%;height:100%;overflow-x: scroll;white-space: nowrap;background-image: url(img/n01.png);background-size: cover;}
+.s1{background-color: #fff;}
+.s3{width: 100%;height:100%;white-space: nowrap;}
 /*text*/
 sup{font-weight: 100;}
-strong{font-weight: 600;color:#48C9B0}
+strong{font-weight: 600;color:#1e1e1e;}
 .red{color:#f00;font-family: 'Kanit', sans-serif;}
-.white{color:#fff;}
-.point{color:#48C9B0;font-weight:800;}
+.white{color:#fff !important;}
+.point{color:#1e1e1e;font-weight:800;}
 .s_title{position:absolute;top:10%;left:5%;color:#3e3e3e;font-size: 1.5rem;}
 .s_context{color: #3e3e3e;font-size: 1.5rem;position:absolute;bottom: 5%;padding: 5% 5%;line-height: 2.3rem;letter-spacing: -0.04rem;font-weight: 500;
 z-index: 2;}
